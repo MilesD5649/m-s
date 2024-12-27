@@ -2,6 +2,11 @@
 <html>
 <head> 
  <style>
+  #lyrics {
+      display: none;
+      opacity: 0;
+      transition: opacity 2s;
+    } 
   body{background-image:url('https://cdn12.picryl.com/photo/2016/12/31/sunset-sea-sky-travel-vacation-023561-1024.jpg');
        background-size:cover;
        background-position:center;
@@ -9,12 +14,9 @@
        font-family:'Georgia', Serif;
        color: #FFFFFF;
        transform:translateX(40px);
-  #lyrics {
-      display: none;
-      opacity: 0;
-      transition: opacity 2s;
-    }
+ 
       }
+
 h1,h2,h3,p,img,li,footer {
  opacity:0;
  animation: SlideIn 4s ease-out forwards;}
@@ -50,15 +52,20 @@ h1{
       Transform: TranslateX(0px);}
   }
         
-
+@keyframes SlideOut
+  {
+   from{Opacity:0;
+        Transform:TranslateX(-1000px);}
+    to{Opacity:1;
+       Transform:TranslateX(opx);}
 
 
 
 
   button {
-      font-size: 1.5rem;
+      font-size: 3rem;
       padding: 10px 20px;
-      background-color: #f1c40f;
+      background-color: #ff000d;
       border: none;
       cursor: pointer;
       transition: background-color 0.3s ease;
@@ -90,7 +97,7 @@ h1{
 <audio src="https://github.com/MilesD5649/m-s/raw/main/Childish%20Gambino%20-%20Lithonia%20(Lyrics).mp3" controls> </audio>
  <footer>I ❤️ Sarah</footer>
 </strong>
-    <button id="startBtn">Click me for a surprise!</button>
+    <button id="startBtn">DO NOT PRESS THIS BUTTON</button>
    </div>
  </body>
 </html>
