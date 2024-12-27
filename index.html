@@ -9,20 +9,54 @@
        font-family:'Georgia', Serif;
        color: #FFFFFF;
       }
-  h1{animation: spinIn 3s ease-out}
-  @keyframes spinIn{
-   from{opacity:0;
-        transform: translateY(-50px);}
-  to
-   { opacity: 1;
-    transform: translateY(0px);}
+h1,h2,h3,p,img {
+ opacity:0;
+ animation: SlideIn 2s ease-out forwards;}
+h1{
+ animation-delay:0s;}
+  h2:nth-of-type(1){
+  animation-delay:1s;}
+   h2:nth-of-type(2){
+  animation-delay:2s;}
+  li:nth-of-type(1){animation-delay:3s;}
+    li:nth-of-type(2){animation-delay:4s;}
+    li:nth-of-type(3){animation-delay:5s;}
+    li:nth-of-type(4){animation-delay:6s;}
+    li:nth-of-type(5){animation-delay:7s;}
+    h2:nth-of-type(3){
+  animation-delay:8s;}
+      p:nth-of-type(2){
+  animation-delay:9s;}
+    h2:nth-of-type(4){
+  animation-delay:10s;}
+    p:nth-of-type(3){
+  animation-delay:11s;}
+  p:nth-of-type(4){
+  animation-delay:12s;}
+  img{
+  animation-delay:13s;}
+  footer{ animation-delay:14s;}
+@keyframes SlideIn
+  {
+   from{Opacity:0;
+        Transform: TranslateX(-50px);}
+   to{Opacity:1;
+      Transform: TranslateX(0px);}
+  }
+        
+
+
+
+
+
+  
  </style>
 </head>
  <body>
 <strong>
   <h1> ALL ABOUT SARAH! </h1>
 <h2> A.k.a. my special girl </h2>
-<h3>Fun facts about Sarah:</h3>
+<h2>Fun facts about Sarah:</h2>
 <p>
 <ol>
 <li>Sarah is my <strong>girlfriend!!!!!!</strong> </li>
@@ -32,15 +66,16 @@
 <li>Did I mention She’s my girlfriend???!!!!</li>
 </ol>
 </p>
-<h3> Pros to dating Sarah: </h3>
+<h2> Pros to dating Sarah: </h2>
 <p> -Infinite happiness</p>
-<h3> Cons to dating Sarah: </h3>
+<h2> Cons to dating Sarah: </h2>
  <p> She is prone to aggressive prettiness (everyone around her is blinded by her stunning features)
  </p>
 <p>As seen below:</p> 
  
  <img src="https://media.licdn.com/dms/image/v2/D5603AQGKMp_-hE5IHQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711234403385?e=2147483647&v=beta&t=6H6WOfhJgU1m_dnCiHzfFch8JhPnhRcgBWzn6UKbzfE"/>
-<footer>I ❤️ Sarah</footer>
+
+ <footer>I ❤️ Sarah</footer>
 </strong>
  </body>
 </html>
