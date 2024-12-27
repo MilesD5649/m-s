@@ -1,81 +1,126 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head> 
- <style>
-  body{background-image:url('https://cdn12.picryl.com/photo/2016/12/31/sunset-sea-sky-travel-vacation-023561-1024.jpg');
-       background-size:cover;
-       background-position:center;
-       background-repeat:norepeat;
-       font-family:'Georgia', Serif;
-       color: #FFFFFF;
-      }
-h1,h2,h3,p,img,li {
- opacity:0;
- animation: SlideIn 2s ease-out forwards;}
-h1{
- animation-delay:0s;}
-  h2:nth-of-type(1){
-  animation-delay:1s;}
-   h2:nth-of-type(2){
-  animation-delay:2s;}
-  li:nth-of-type(1){animation-delay:3s;}
-    li:nth-of-type(2){animation-delay:4s;}
-    li:nth-of-type(3){animation-delay:5s;}
-    li:nth-of-type(4){animation-delay:6s;}
-    li:nth-of-type(5){animation-delay:7s;}
-    h2:nth-of-type(3){
-  animation-delay:8s;}
-      p:nth-of-type(2){
-  animation-delay:9s;}
-    h2:nth-of-type(4){
-  animation-delay:10s;}
-    p:nth-of-type(3){
-  animation-delay:11s;}
-  p:nth-of-type(4){
-  animation-delay:12s;}
-  img{
-  animation-delay:13s;}
-  footer{ animation-delay:14s;}
-@keyframes SlideIn
-  {
-   from{Opacity:0;
-        Transform: TranslateX(-50px);}
-   to{Opacity:1;
-      Transform: TranslateX(0px);}
-  }
-        
+<head>
+    <style>
+        body {
+            background-image: url('https://cdn12.picryl.com/photo/2016/12/31/sunset-sea-sky-travel-vacation-023561-1024.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Georgia', Serif;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
 
+        /* General rule for all elements */
+        h1, h2, h3, p, img, li, footer {
+            opacity: 0;
+            animation: SlideIn 2s ease-out forwards; /* Apply the slide-in animation */
+        }
 
+        /* Keyframes for sliding in from left to right */
+        @keyframes SlideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
+        /* Apply animation delays */
+        h1 {
+            animation-delay: 0s; /* First element */
+        }
 
+        h2:nth-of-type(1) {
+            animation-delay: 1s;
+        }
 
-  
- </style>
+        h2:nth-of-type(2) {
+            animation-delay: 2s;
+        }
+
+        li:nth-of-type(1) {
+            animation-delay: 3s;
+        }
+
+        li:nth-of-type(2) {
+            animation-delay: 4s;
+        }
+
+        li:nth-of-type(3) {
+            animation-delay: 5s;
+        }
+
+        li:nth-of-type(4) {
+            animation-delay: 6s;
+        }
+
+        li:nth-of-type(5) {
+            animation-delay: 7s;
+        }
+
+        h2:nth-of-type(3) {
+            animation-delay: 8s;
+        }
+
+        p:nth-of-type(1) {
+            animation-delay: 9s;
+        }
+
+        h2:nth-of-type(4) {
+            animation-delay: 10s;
+        }
+
+        p:nth-of-type(2) {
+            animation-delay: 11s;
+        }
+
+        p:nth-of-type(3) {
+            animation-delay: 12s;
+        }
+
+        p:nth-of-type(4) {
+            animation-delay: 13s;
+        }
+
+        img {
+            animation-delay: 14s;
+        }
+
+        footer {
+            animation-delay: 15s; /* Footer slides in after the image */
+        }
+
+    </style>
 </head>
- <body>
-<strong>
-  <h1> ALL ABOUT SARAH! </h1>
-<h2> A.k.a. my special girl </h2>
-<h2>Fun facts about Sarah:</h2>
-<p>
-<ol>
-<li>Sarah is my <strong>girlfriend!!!!!!</strong> </li>
-<li>Sarah is really pretty!</li>
-<li>Some other words I would use to describe Sarah are gorgeous, funny, sweet, cool, and totally awesome in every imaginable way. </li>
-<li>Sarah is also my future wife.</li>
-<li>Did I mention She’s my girlfriend???!!!!</li>
-</ol>
-</p>
-<h2> Pros to dating Sarah: </h2>
-<p> -Infinite happiness</p>
-<h2> Cons to dating Sarah: </h2>
- <p> She is prone to aggressive prettiness (everyone around her is blinded by her stunning features)
- </p>
-<p>As seen below:</p> 
- 
- <img src="https://media.licdn.com/dms/image/v2/D5603AQGKMp_-hE5IHQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711234403385?e=2147483647&v=beta&t=6H6WOfhJgU1m_dnCiHzfFch8JhPnhRcgBWzn6UKbzfE"/>
+<body>
 
- <footer>I ❤️ Sarah</footer>
-</strong>
- </body>
+    <h1>ALL ABOUT SARAH!</h1>
+    <h2>A.k.a. my special girl</h2>
+    <h2>Fun facts about Sarah:</h2>
+    <p>
+        <ol>
+            <li>Sarah is my <strong>girlfriend!!!!!!</strong></li>
+            <li>Sarah is really pretty!</li>
+            <li>Some other words I would use to describe Sarah are gorgeous, funny, sweet, cool, and totally awesome in every imaginable way.</li>
+            <li>Sarah is also my future wife.</li>
+            <li>Did I mention She’s my girlfriend???!!!!</li>
+        </ol>
+    </p>
+    <h2>Pros to dating Sarah:</h2>
+    <p>- Infinite happiness</p>
+    <h2>Cons to dating Sarah:</h2>
+    <p>She is prone to aggressive prettiness (everyone around her is blinded by her stunning features)</p>
+    <p>As seen below:</p>
+
+    <img src="https://media.licdn.com/dms/image/v2/D5603AQGKMp_-hE5IHQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711234403385?e=2147483647&v=beta&t=6H6WOfhJgU1m_dnCiHzfFch8JhPnhRcgBWzn6UKbzfE" />
+
+    <footer>I ❤️ Sarah</footer>
+
+</body>
 </html>
